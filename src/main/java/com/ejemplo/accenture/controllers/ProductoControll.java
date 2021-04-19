@@ -69,9 +69,7 @@ public class ProductoControll {
          }
         order.setFecha(LocalDateTime.now());
         order.setEstado("abierto");
-        
-        // System.out.println("yyyy/MM/dd HH:mm:ss-> "+dtf.format(LocalDateTime.now()));
-        // System.out.println("HH:mm:ss-> "+hour.format(LocalDateTime.now()));
+       
         orders.add(order);
 
         return ResponseEntity.ok(orders);
